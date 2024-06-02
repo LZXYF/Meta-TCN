@@ -1,0 +1,657 @@
+# TripLet Network Train Params
+
+# Huffpost
+
+## 5-way 5-shot
+
+```txt
+    SI=50
+	STS=False
+	ABLATION=
+	CLASS_LOSS_WEIGHT=1.0
+	CLIP_GRAD=None
+	CUDA=0
+	DATA_PATH=../data/huffpost.json
+	DATASET=huffpost
+	DROPOUT=0.2
+	EBD_LEN=240
+	FINETUNE_EBD=False
+	ID2WORD=None
+	KERNEL_NUM=22
+	KERNEL_SIZE=[2, 2, 4]
+	LR_SCHEDULER=None
+	MARGIN=5.0
+	META_LR=1e-05
+	MODE=train
+	N_TEST_CLASS=16
+	N_TRAIN_CLASS=20
+	N_VAL_CLASS=5
+	N_WORKERS=1
+	NOTQDM=True
+	PATH=
+	PATH_DRAWN_DATA=reuters_False_data.json
+	PATIENCE=8
+	PRETRAIN=None
+	PROTO_LOSS_WEIGHT=0.2
+	QUERY=25
+	RESULT_PATH=
+	SAVE=False
+	SAVEPATH=model01
+	SEED=42
+	SHOT=5
+	TASK_LR=0.04
+	TASK_NUM=4
+	TEMPERATURE=5.0
+	TEST_EPOCHS=1000
+	TEST_ITER=20
+	TRAIN_EPISODES=1
+	TRAIN_EPOCHS=6000
+	TRAIN_ITER=20
+	TRAIN_LOSS_WEIGHT=8.0
+	TRAIN_MODE=None
+	VAL_EPOCHS=200
+	WAY=5
+	WEIGHT_DECAY=1e-05
+	WORD_VECTOR=../pretrain_wordvec/wiki.en.vec
+	WV_PATH=../pretrain_wordvec
+```
+
+## 5-way 1-shot
+
+```txt
+    SI=2
+	STS=False
+	ABLATION=
+	CLASS_LOSS_WEIGHT=0.8
+	CLIP_GRAD=None
+	CUDA=0
+	DATA_PATH=../data/huffpost.json
+	DATASET=huffpost
+	DROPOUT=0.2
+	EBD_LEN=240
+	FINETUNE_EBD=False
+	ID2WORD=None
+	KERNEL_NUM=22
+	KERNEL_SIZE=[2, 2, 4]
+	LR_SCHEDULER=None
+	MARGIN=5.0
+	META_LR=1e-05
+	MODE=train
+	N_TEST_CLASS=16
+	N_TRAIN_CLASS=20
+	N_VAL_CLASS=5
+	N_WORKERS=1
+	NOTQDM=True
+	PATH=
+	PATH_DRAWN_DATA=reuters_False_data.json
+	PATIENCE=8
+	PRETRAIN=None
+	PROTO_LOSS_WEIGHT=0.1
+	QUERY=25
+	RESULT_PATH=
+	SAVE=False
+	SAVEPATH=model01
+	SEED=2110
+	SHOT=1
+	TASK_LR=0.04
+	TASK_NUM=4
+	TEMPERATURE=5.0
+	TEST_EPOCHS=1000
+	TEST_ITER=20
+	TRAIN_EPISODES=1
+	TRAIN_EPOCHS=6000
+	TRAIN_ITER=20
+	TRAIN_LOSS_WEIGHT=5.0
+	TRAIN_MODE=None
+	VAL_EPOCHS=200
+	WAY=5
+	WEIGHT_DECAY=1e-05
+	WORD_VECTOR=../pretrain_wordvec/wiki.en.vec
+	WV_PATH=../pretrain_wordvec
+```
+
+# 20NEWS
+
+## 5-way 5-shot
+
+```
+        SI=50
+        STS=False
+        ABLATION=
+        CLASS_LOSS_WEIGHT=1.6
+        CLIP_GRAD=None
+        CUDA=0
+        DATA_PATH=../data/20news.json
+        DATASET=20newsgroup
+        DROPOUT=0.2
+        EBD_LEN=240
+        FINETUNE_EBD=False
+        ID2WORD=None
+        KERNEL_NUM=20
+        KERNEL_SIZE=[2, 2, 4]
+        LR_SCHEDULER=None
+        MARGIN=5.0
+        META_LR=1e-05
+        MODE=train
+        N_TEST_CLASS=7
+        N_TRAIN_CLASS=8
+        N_VAL_CLASS=5
+        N_WORKERS=1
+        NOTQDM=True
+        PATH=
+        PATH_DRAWN_DATA=reuters_False_data.json
+        PATIENCE=10
+        PRETRAIN=None
+        QUERY=25
+        RESULT_PATH=
+        SAVE=False
+        SAVEPATH=model02
+        SEED=42
+        SHOT=5
+        TASK_LR=0.05
+        TASK_NUM=4
+        TEMPERATURE=5.0
+        TEST_EPOCHS=1000
+        TEST_ITER=22
+        TRAIN_EPISODES=1
+        TRAIN_EPOCHS=6000
+        TRAIN_ITER=22
+        TRAIN_LOSS_WEIGHT=4
+        TRAIN_MODE=None
+	    VAL_EPOCHS=200
+        WAY=5
+        WEIGHT_DECAY=1e-05
+        WORD_VECTOR=../pretrain_wordvec/wiki.en.vec
+        WV_PATH=../pretrain_wordvec
+```
+
+## 5-way 1-shot
+
+```
+    SI=5
+	STS=False
+	ABLATION=
+	CLASS_LOSS_WEIGHT=1.5
+	CLIP_GRAD=None
+	CUDA=0
+	DATA_PATH=../data/20news.json
+	DATASET=20newsgroup
+	DROPOUT=0.2
+	EBD_LEN=240
+	FINETUNE_EBD=False
+	ID2WORD=None
+	KERNEL_NUM=20
+	KERNEL_SIZE=[2, 2, 4]
+	LR_SCHEDULER=None
+	MARGIN=5.0
+	META_LR=1e-05
+	MODE=train
+	N_TEST_CLASS=7
+	N_TRAIN_CLASS=8
+	N_VAL_CLASS=5
+	N_WORKERS=1
+	NOTQDM=True
+	PATH=
+	PATH_DRAWN_DATA=reuters_False_data.json
+	PATIENCE=8
+	PRETRAIN=None
+	PROTO_LOSS_WEIGHT=0.05
+	QUERY=25
+	RESULT_PATH=
+	SAVE=False
+	SAVEPATH=model01
+	SEED=42
+	SHOT=1
+	TASK_LR=0.05
+	TASK_NUM=4
+	TEMPERATURE=5.0
+	TEST_EPOCHS=1000
+	TEST_ITER=22
+	TRAIN_EPISODES=1
+	TRAIN_EPOCHS=6000
+	TRAIN_ITER=22
+	TRAIN_LOSS_WEIGHT=3.0
+	TRAIN_MODE=None
+	VAL_EPOCHS=200
+	WAY=5
+	WEIGHT_DECAY=1e-05
+	WORD_VECTOR=../pretrain_wordvec/wiki.en.vec
+	WV_PATH=../pretrain_wordvec
+```
+
+# FewRel
+
+## 5-way 5-shot
+
+```
+        SI=20
+        STS=True
+        ABLATION=
+        CLASS_LOSS_WEIGHT=1.5
+        CLIP_GRAD=None
+        CUDA=0
+        DATA_PATH=../data/fewrel.json
+        DATASET=fewrel
+        DROPOUT=0.2
+        EBD_LEN=12
+        FINETUNE_EBD=False
+        ID2WORD=None
+        KERNEL_NUM=24
+        KERNEL_SIZE=[2, 2, 4]
+        LR_SCHEDULER=None
+        MARGIN=10.0
+        META_LR=2e-05
+        MODE=train
+        N_TEST_CLASS=10
+        N_TRAIN_CLASS=65
+        N_VAL_CLASS=5
+        N_WORKERS=1
+        NOTQDM=True
+        PATH=
+        PATH_DRAWN_DATA=reuters_False_data.json
+        PATIENCE=8
+        PRETRAIN=None
+        PROTO_LOSS_WEIGHT=0.01
+        QUERY=25
+        RESULT_PATH=
+        SAVE=False
+        SAVEPATH=model03
+        SEED=42
+        SHOT=5
+        TASK_LR=0.04
+        TASK_NUM=4
+        TEMPERATURE=5.0
+        TEST_EPOCHS=1000
+        TEST_ITER=25
+        TRAIN_EPISODES=1
+        TRAIN_EPOCHS=6000
+        TRAIN_ITER=25
+        TRAIN_LOSS_WEIGHT=1.5
+        TRAIN_MODE=None
+        VAL_EPOCHS=200
+        WAY=5
+        WEIGHT_DECAY=2e-05
+        WORD_VECTOR=../pretrain_wordvec/wiki.en.vec
+        WV_PATH=../pretrain_wordvec
+```
+
+## 5-way 1-shot
+
+```
+    SI=50
+	STS=False
+	ABLATION=
+	CLASS_LOSS_WEIGHT=1.5
+	CLIP_GRAD=None
+	CUDA=0
+	DATA_PATH=../data/fewrel.json
+	DATASET=fewrel
+	DROPOUT=0.2
+	EBD_LEN=240
+	FINETUNE_EBD=False
+	ID2WORD=None
+	KERNEL_NUM=24
+	KERNEL_SIZE=[2, 2, 4]
+	LR_SCHEDULER=None
+	MARGIN=5.0
+	META_LR=2e-05
+	MODE=train
+	N_TEST_CLASS=10
+	N_TRAIN_CLASS=65
+	N_VAL_CLASS=5
+	N_WORKERS=1
+	NOTQDM=True
+	PATH=
+	PATH_DRAWN_DATA=reuters_False_data.json
+	PATIENCE=8
+	PRETRAIN=None
+	PROTO_LOSS_WEIGHT=0.0
+	QUERY=25
+	RESULT_PATH=
+	SAVE=False
+	SAVEPATH=model01
+	SEED=42
+	SHOT=1
+	TASK_LR=0.04
+	TASK_NUM=4
+	TEMPERATURE=5.0
+	TEST_EPOCHS=1000
+	TEST_ITER=24
+	TRAIN_EPISODES=1
+	TRAIN_EPOCHS=6000
+	TRAIN_ITER=24
+	TRAIN_LOSS_WEIGHT=2.0
+	TRAIN_MODE=None
+	VAL_EPOCHS=200
+	WAY=5
+	WEIGHT_DECAY=2e-05
+	WORD_VECTOR=../pretrain_wordvec/wiki.en.vec
+	WV_PATH=../pretrain_wordvec
+```
+
+# RCV1
+
+## 5-way 5-shot
+
+```
+    SI=50
+	STS=False
+	ABLATION=
+	CLASS_LOSS_WEIGHT=1.0
+	CLIP_GRAD=None
+	CUDA=0
+	DATA_PATH=../data/rcv1_text.json
+	DATASET=rcv1
+	DROPOUT=0.2
+	EBD_LEN=240
+	FINETUNE_EBD=False
+	ID2WORD=None
+	KERNEL_NUM=26
+	KERNEL_SIZE=[2, 2, 4]
+	LR_SCHEDULER=None
+	MARGIN=12.0
+	META_LR=5e-05
+	MODE=train
+	N_TEST_CLASS=24
+	N_TRAIN_CLASS=37
+	N_VAL_CLASS=10
+	N_WORKERS=1
+	NOTQDM=True
+	PATH_DRAWN_DATA=reuters_False_data.json
+	PATIENCE=8
+	PRETRAIN=None
+	QUERY=25
+	RESULT_PATH=
+	SAVE=False
+	SAVEPATH=model01
+	SEED=42
+	SHOT=5
+	TASK_LR=0.04
+	TASK_NUM=4
+	TEMPERATURE=5.0
+	TEST_EPOCHS=1000
+	TEST_ITER=32
+	TRAIN_EPISODES=1
+	TRAIN_EPOCHS=6000
+	TRAIN_ITER=22
+	TRAIN_LOSS_WEIGHT=1.0
+	TRAIN_MODE=None
+	VAL_EPOCHS=200
+	WAY=5
+	WEIGHT_DECAY=2e-05
+	WORD_VECTOR=../pretrain_wordvec/wiki.en.vec
+	WV_PATH=../pretrain_wordvec
+```
+
+## 5-way 1-shot
+
+```
+    SI=50
+	STS=False
+	ABLATION=
+	CLASS_LOSS_WEIGHT=1.0
+	CLIP_GRAD=None
+	CUDA=0
+	DATA_PATH=../data/rcv1_text.json
+	DATASET=rcv1
+	DROPOUT=0.2
+	EBD_LEN=240
+	FINETUNE_EBD=False
+	ID2WORD=None
+	KERNEL_NUM=26
+	KERNEL_SIZE=[2, 2, 4]
+	LR_SCHEDULER=None
+	MARGIN=12.0
+	META_LR=5e-05
+	MODE=train
+	N_TEST_CLASS=24
+	N_TRAIN_CLASS=37
+	N_VAL_CLASS=10
+	N_WORKERS=1
+	NOTQDM=True
+	PATH=
+	PATH_DRAWN_DATA=reuters_False_data.json
+	PATIENCE=8
+	PRETRAIN=None
+	QUERY=25
+	RESULT_PATH=
+	SAVE=False
+	SAVEPATH=model01
+	SEED=42
+	SHOT=1
+	TASK_LR=0.04
+	TASK_NUM=4
+	TEMPERATURE=5.0
+	TEST_EPOCHS=1000
+	TEST_ITER=22
+	TRAIN_EPISODES=1
+	PROTO_LOSS_WEIGHT=0.01
+	TRAIN_EPOCHS=6000
+	TRAIN_ITER=22
+	TRAIN_LOSS_WEIGHT=2.0
+	TRAIN_MODE=None
+	VAL_EPOCHS=200
+	WAY=5
+	WEIGHT_DECAY=2e-05
+	WORD_VECTOR=../pretrain_wordvec/wiki.en.vec
+	WV_PATH=../pretrain_wordvec
+```
+
+# Amzon
+
+## 5-way 5-shot
+
+```
+    STS=False
+	ABLATION=
+	CLASS_LOSS_WEIGHT=1.0
+	CLIP_GRAD=None
+	CUDA=0
+	DATA_PATH=../data/amazon.json
+	DATASET=amazon
+	DROPOUT=0.2
+	EBD_LEN=240
+	FINETUNE_EBD=False
+	ID2WORD=None
+	KERNEL_NUM=24
+	KERNEL_SIZE=[2, 2, 4]
+	LR_SCHEDULER=None
+	MARGIN=12.0
+	META_LR=2e-05
+	MODE=train
+	N_TEST_CLASS=9
+	N_TRAIN_CLASS=10
+	N_VAL_CLASS=5
+	N_WORKERS=1
+	NOTQDM=True
+	PATH=
+	PATH_DRAWN_DATA=reuters_False_data.json
+	PATIENCE=8
+	PRETRAIN=None
+	PROTO_LOSS_WEIGHT=1.0
+	QUERY=25
+	RESULT_PATH=
+	SAVE=False
+	SAVEPATH=model01
+	SEED=42
+	SHOT=5
+	TASK_LR=0.02
+	TASK_NUM=4
+	TEMPERATURE=5.0
+	TEST_EPOCHS=1000
+	TEST_ITER=38
+	TRAIN_EPISODES=1
+	TRAIN_EPOCHS=6000
+	TRAIN_ITER=38
+	TRAIN_LOSS_WEIGHT=2.0
+	TRAIN_MODE=None
+	VAL_EPOCHS=200
+	WAY=5
+	WEIGHT_DECAY=2e-05
+	WORD_VECTOR=../pretrain_wordvec/wiki.en.vec
+	WV_PATH=../pretrain_wordvec
+```
+
+## 5-way 1-shot
+
+```
+    SI=50
+	STS=False
+	ABLATION=
+	CLASS_LOSS_WEIGHT=1.0
+	CLIP_GRAD=None
+	CUDA=0
+	DATA_PATH=../data/amazon.json
+	DATASET=amazon
+	DROPOUT=0.2
+	EBD_LEN=240
+	FINETUNE_EBD=False
+	ID2WORD=None
+	KERNEL_NUM=24
+	KERNEL_SIZE=[2, 2, 4]
+	LR_SCHEDULER=None
+	MARGIN=12.0
+	META_LR=2e-05
+	MODE=train
+	N_TEST_CLASS=9
+	N_TRAIN_CLASS=10
+	N_VAL_CLASS=5
+	N_WORKERS=1
+	NOTQDM=True
+	PATH=
+	PATH_DRAWN_DATA=reuters_False_data.json
+	PATIENCE=8
+	PRETRAIN=None
+	PROTO_LOSS_WEIGHT=1.0
+	QUERY=25
+	RESULT_PATH=
+	SAVE=False
+	SAVEPATH=model01
+	SEED=2110
+	SHOT=1
+	TASK_LR=0.02
+	TASK_NUM=4
+	TEMPERATURE=5.0
+	TEST_EPOCHS=1000
+	TEST_ITER=38
+	TRAIN_EPISODES=1
+	TRAIN_EPOCHS=6000
+	TRAIN_ITER=38
+	TRAIN_LOSS_WEIGHT=2.0
+	TRAIN_MODE=None
+	VAL_EPOCHS=200
+	WAY=5
+	WEIGHT_DECAY=2e-05
+	WORD_VECTOR=../pretrain_wordvec/wiki.en.vec
+	WV_PATH=../pretrain_wordvec
+```
+
+# Reuters
+
+## 5-way 5-shot
+
+```
+        SI=2
+        STS=True
+        ABLATION=
+        CLASS_LOSS_WEIGHT=2.0
+        CLIP_GRAD=None
+        CUDA=1
+        DATA_PATH=../data/reuters.json
+        DATASET=reuters
+        DROPOUT=0.3
+        EBD_LEN=240
+        FINETUNE_EBD=False
+        ID2WORD=None
+        KERNEL_NUM=34
+        KERNEL_SIZE=[2, 2, 4]
+        LR_SCHEDULER=None
+        MARGIN=11.0
+        META_LR=2e-05
+        MODE=train
+        N_TEST_CLASS=11
+        N_TRAIN_CLASS=15
+        N_VAL_CLASS=5
+        N_WORKERS=1
+        NOTQDM=True
+        PATH=
+        PATH_DRAWN_DATA=reuters_False_data.json
+        PATIENCE=8
+        PRETRAIN=None
+        PROTO_LOSS_WEIGHT=0.1
+        QUERY=25
+        RESULT_PATH=
+        SAVE=False
+        SAVEPATH=model03
+        SEED=3
+        SHOT=5
+        TASK_LR=0.04
+        TASK_NUM=4
+        TEMPERATURE=5.0
+        TEST_EPOCHS=1000
+        TEST_ITER=32
+        TRAIN_EPISODES=1
+        TRAIN_EPOCHS=6000
+        TRAIN_ITER=20
+        TRAIN_LOSS_WEIGHT=2.0
+        TRAIN_MODE=None
+        VAL_EPOCHS=200
+        WAY=5
+        WEIGHT_DECAY=2e-05
+        WORD_VECTOR=../pretrain_wordvec/wiki.en.vec
+        WV_PATH=../pretrain_wordvec
+```
+
+## 5-way 1-shot
+
+```
+        SI=10
+        STS=False
+        ABLATION=
+        CLASS_LOSS_WEIGHT=1.0
+        CLIP_GRAD=None
+        CUDA=1
+        DATA_PATH=../data/reuters.json
+        DATASET=reuters
+        DROPOUT=0.2
+        EBD_LEN=240
+        FINETUNE_EBD=False
+        ID2WORD=None
+        KERNEL_NUM=26
+        KERNEL_SIZE=[2, 2, 4]
+        LR_SCHEDULER=None
+        MARGIN=12.0
+        META_LR=2e-05
+        MODE=train
+        N_TEST_CLASS=11
+        N_TRAIN_CLASS=15
+        N_VAL_CLASS=5
+        N_WORKERS=1
+        NOTQDM=True
+        PATH=
+        PATH_DRAWN_DATA=reuters_False_data.json
+        PATIENCE=8
+        PRETRAIN=None
+        PROTO_LOSS_WEIGHT=0.05
+        QUERY=25
+        RESULT_PATH=
+        SAVE=False
+        SAVEPATH=model03
+        SEED=3
+        SHOT=1
+        TASK_LR=0.02
+        TASK_NUM=4
+        TEMPERATURE=5.0
+        TEST_EPOCHS=1000
+        TEST_ITER=36
+        TRAIN_EPISODES=1
+        TRAIN_EPOCHS=6000
+        TRAIN_ITER=36
+        TRAIN_LOSS_WEIGHT=2.0
+        TRAIN_MODE=None
+        VAL_EPOCHS=200
+        WAY=5
+        WEIGHT_DECAY=2e-05
+        WORD_VECTOR=../pretrain_wordvec/wiki.en.vec
+        WV_PATH=../pretrain_wordvec
+```
